@@ -1,6 +1,5 @@
 import { drizzle } from 'drizzle-orm/vercel-postgres'
-import { createClient } from '@vercel/postgres'
+import { sql } from '@vercel/postgres'
 import * as schema from './schema'
 
-const client = createClient()
-export const db = drizzle(client, { schema })
+export const db = drizzle(sql, { schema })

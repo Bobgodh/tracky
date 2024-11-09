@@ -5,7 +5,7 @@ const isPublicRoute = createRouteMatcher(['/', '/sign-in(.*)', '/sign-up(.*)'])
 const isOnboardingRoute = createRouteMatcher(['/onboarding'])
 
 export default clerkMiddleware(async (auth, req) => {
-	const { userId, sessionClaims, redirectToSignIn } = await auth()
+	const { userId, redirectToSignIn } = await auth()
 
 	if (userId && isOnboardingRoute(req)) return NextResponse.next()
 

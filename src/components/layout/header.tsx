@@ -16,23 +16,6 @@ export function Header() {
 	if (pathname === '/onboarding') return null
 	return (
 		<nav className='flex w-full items-center justify-between px-5 pb-2 pt-8 text-xl font-semibold md:px-10 lg:px-16'>
-			<div className='flex space-x-10 md:space-x-28'>
-				<Link
-					href='/'
-					className='flex items-center space-x-3 transition-opacity hover:opacity-80 rtl:space-x-reverse'
-				>
-					<h1 className='font-serif text-3xl font-bold text-green-600 dark:text-green-500'>
-						trac<span className='text-wood-950 dark:text-wood-100'>ky</span>
-					</h1>
-					<Badge
-						className='hidden cursor-pointer rounded-full md:block'
-						variant='outline'
-					>
-						alpha
-					</Badge>
-				</Link>
-				<NavLinks />
-			</div>
 			<div className='flex flex-row items-center gap-3'>
 				<ExternalLink
 					href='https://github.com/fraineralex/tracky'

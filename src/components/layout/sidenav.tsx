@@ -1,7 +1,7 @@
 'use client'
 
 import { HouseIcon } from '../ui/icons'
-import { Dumbbell, Ham } from 'lucide-react'
+import { Ham } from 'lucide-react'
 import SidenavButton from './sidenav-button'
 import { usePathname } from 'next/navigation'
 
@@ -18,9 +18,6 @@ export default function SideNav() {
 				</SidenavButton>
 				<SidenavButton label='Food' href='/food' enabled>
 					<Ham className='h-6 w-6 md:h-5 md:w-5' />
-				</SidenavButton>
-				<SidenavButton label='Exercise' href='/exercise' enabled>
-					<Dumbbell className='h-6 w-6 md:h-5 md:w-5' />
 				</SidenavButton>
 			</article>
 		</nav>

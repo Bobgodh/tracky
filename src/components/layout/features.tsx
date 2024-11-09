@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "lucide-react";
+import { JSX } from "react";
 
 interface FeatureProps {
   icon: JSX.Element;

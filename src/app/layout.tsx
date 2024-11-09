@@ -7,7 +7,6 @@ import { ThemeProvider } from '~/components/providers/theme-provider'
 import SideNav from '~/components/layout/sidenav'
 import Toaster from '~/components/ui/sonner'
 import { Metadata } from 'next'
-import { SidebarProvider, SidebarTrigger } from '~/components/ui/sidebar'
 
 const fontSans = FontSans({
 	subsets: ['latin'],
@@ -105,12 +104,10 @@ export default function RootLayout({
 					<div className='min-h-screen overflow-y-auto md:grid md:grid-rows-[auto,1fr]'>
 						<ClerkProvider afterSignOutUrl='/' dynamic>
 							<Header />
-							<SidebarProvider>
-								<main className='px-5 md:flex md:px-10'>
-									<SideNav /> <SidebarTrigger />
-									{children}
-								</main>
-							</SidebarProvider>
+							<main className='px-5 md:flex md:px-10'>
+								<SideNav />
+								{children}
+							</main>
 						</ClerkProvider>
 					</div>
 					<Toaster richColors />

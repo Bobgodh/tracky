@@ -1,7 +1,7 @@
 'use client'
 
 import { HouseIcon } from '../ui/icons'
-import { Dumbbell, Ham, NotepadText, Settings } from 'lucide-react'
+import { Dumbbell, Ham } from 'lucide-react'
 import SidenavButton from './sidenav-button'
 import { usePathname } from 'next/navigation'
 

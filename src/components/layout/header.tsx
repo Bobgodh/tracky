@@ -28,7 +28,7 @@ export function Header() {
 			</div>
 			<div className='flex flex-row items-center gap-3'>
 				<ExternalLink
-					href='https://github.com/fraineralex/tracky'
+					href='https://github.com/avalynndev/BetterU'
 					className={buttonVariants({ variant: 'ghost', size: 'icon' })}
 				>
 					<Github className='h-6 w-6' />

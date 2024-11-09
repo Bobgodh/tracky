@@ -20,8 +20,8 @@ const fontSerif = FontSerif({
 
 export const metadata: Metadata = {
 	title: {
-		default: 'Tracky',
-		template: '%s | Tracky'
+		default: 'BetterU',
+		template: '%s | BetterU'
 	},
 	description:
 		'Fitness tracking web app with AI-powered features to quickly log meals and exercises,',
@@ -38,9 +38,11 @@ export const metadata: Metadata = {
 		'AI',
 		'web app'
 	],
-	metadataBase: new URL(process.env.DOMAIN ?? 'https://tracky.fraineralex.dev'),
+	metadataBase: new URL(
+		process.env.DOMAIN ?? 'https://betteru.vercel.app'
+	),
 	openGraph: {
-		title: 'Tracky',
+		title: 'BetterU',
 		description:
 			'Fitness tracking web app with AI-powered features to quickly log meals and exercises,',
 		images: [
@@ -66,9 +68,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		creator: '@fraineralex',
-		site: '@fraineralex',
-		title: 'Tracky',
+		creator: '@avalynndev',
+		site: '@avalynndev',
+		title: 'BetterU',
 		description:
 			'Fitness tracking web app with AI-powered features to quickly log meals and exercises,',
 		images: [

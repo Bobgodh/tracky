@@ -12,8 +12,8 @@ export default clerkMiddleware(async (auth, req) => {
 	if (!userId && !isPublicRoute(req))
 		return redirectToSignIn({ returnBackUrl: req.url })
 
-	if (userId && !sessionClaims?.metadata?.onboardingCompleted)
-		return NextResponse.redirect(new URL('/onboarding', req.url))
+	// if (userId && !sessionClaims?.metadata?.onboardingCompleted)
+	// 	return NextResponse.redirect(new URL('/onboarding', req.url))
 
 	if (userId && !isPublicRoute(req)) return NextResponse.next()
 })

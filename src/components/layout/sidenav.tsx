@@ -1,16 +1,10 @@
 'use client'
 
 import { HouseIcon } from '../ui/icons'
-import { Dumbbell, Ham, NotepadText, Settings } from 'lucide-react'
+import { Ham } from 'lucide-react'
 import SidenavButton from './sidenav-button'
 import { usePathname } from 'next/navigation'
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarHeader,
-} from '~/components/ui/sidebar'
+import { Sidebar, SidebarContent, SidebarHeader } from '~/components/ui/sidebar'
 
 export default function SideNav() {
 	const pathname = usePathname()

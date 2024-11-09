@@ -4,10 +4,7 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { ModeToggle } from '~/components/theme/mode-toggle'
 import { Button, buttonVariants } from '../ui/button'
 import { Github } from '../ui/icons'
-import Link from 'next/link'
-import { Badge } from '../ui/badge'
 import ExternalLink from '../ui/external-link'
-import NavLinks from './nav-links'
 import { usePathname } from 'next/navigation'
 
 export function Header() {

@@ -3,7 +3,6 @@ import { Play } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CaloriesChart } from '~/components/landing/calories-chart'
-import Footer from '~/components/layout/footer'
 import { Button } from '~/components/ui/button'
 import { Github, HouseIcon } from '~/components/ui/icons'
 
@@ -91,7 +90,6 @@ export default function HomePage() {
 					</article>
 				</div>
 			</>
-			<Footer className='fixed bottom-0 left-0 py-6 lg:p-6' />
 		</section>
 	)
 }

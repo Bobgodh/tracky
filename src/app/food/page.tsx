@@ -6,7 +6,6 @@ import { NutritionMetrics, PublicMetadata } from '~/types'
 import { getUserNutritionMetrics } from '~/server/utils/nutrition'
 import { getAdjustedDay } from '~/lib/utils'
 import { Metadata } from 'next'
-import Footer from '~/components/layout/footer'
 
 export const metadata: Metadata = {
 	title: 'Food'
@@ -30,7 +29,6 @@ export default async function FoodPage() {
 					weightsChanges={userMetadata.weights}
 				/>
 			</section>
-			<Footer className='-left-4 bottom-0 hidden w-full py-3 backdrop-blur-none sm:fixed sm:block' />
 		</>
 	)
 }

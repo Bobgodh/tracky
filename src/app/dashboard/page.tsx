@@ -7,7 +7,6 @@ import { currentUser } from '@clerk/nextjs/server'
 import { PublicMetadata } from '~/types'
 import { getUserNutritionMetrics } from '~/server/utils/nutrition'
 import { Metadata } from 'next'
-import Footer from '~/components/layout/footer'
 
 export const metadata: Metadata = {
 	title: 'Dashboard'
@@ -45,7 +44,6 @@ export default async function DashboardPage() {
 				</div>
 				<DataAndHabits userMetadata={userMetadata} expenditure={expenditure} />
 			</section>
-			<Footer className='-left-4 bottom-0 hidden w-full py-3 backdrop-blur-none sm:fixed sm:block' />
 		</>
 	)
 }

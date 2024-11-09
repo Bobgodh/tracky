@@ -30,16 +30,6 @@ export default function NavLinks() {
 					</Link>
 				</Button>
 			</SignedIn>
-			<Button
-				variant='link'
-				asChild
-				title='Contact developer'
-				aria-label='Contact developer'
-			>
-				<Link href='mailto:frainerdeveloper@gmail.com' className=''>
-					Contact
-				</Link>
-			</Button>
 		</article>
 	)
 }

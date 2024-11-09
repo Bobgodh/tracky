@@ -33,14 +33,6 @@ export default function SidenavButton({
 			>
 				{children}
 				<span className='sr-only line-clamp-2 sm:not-sr-only'>{label}</span>
-				{!enabled && (
-					<Badge
-						variant='secondary'
-						className='hidden bg-inherit text-[10px] font-light md:inline'
-					>
-						Soon
-					</Badge>
-				)}
 			</Link>
 		</>
 	)

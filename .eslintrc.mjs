@@ -1,4 +1,3 @@
-import plugin from 'tailwindcss'
 
 /** @type {import("eslint").Linter.Config} */
 const config = {

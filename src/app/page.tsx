@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { CaloriesChart } from '~/components/landing/calories-chart'
 import { Button } from '~/components/ui/button'
 import { Github, HouseIcon } from '~/components/ui/icons'
+import { Features } from '~/components/layout/features'
 
 export default function HomePage() {
 	return (
@@ -90,6 +91,7 @@ export default function HomePage() {
 					</article>
 				</div>
 			</>
+			<Features />
 		</section>
 	)
 }
